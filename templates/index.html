@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Portal</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">Intern<span>Connect</span></a><nav><a href="/">Explore Internships</a><a href="#about">About</a></nav></header>
+<main>
+<section class="hero"><p class="eyebrow">FIND YOUR NEXT OPPORTUNITY</p><h1>Start your career with the <span>right internship.</span></h1><p>Discover opportunities, learn new skills and take your first step toward your dream career.</p></section>
+<section class="search-panel">
+  <div class="field"><label for="search">Search</label><input id="search" placeholder="Job title, company or skill"></div>
+  <div class="field"><label for="location">Location</label><input id="location" placeholder="e.g. Chennai"></div>
+  <div class="field"><label for="domain">Domain</label><select id="domain"><option value="">All domains</option><option>Web Development</option><option>Software Development</option><option>Design</option><option>Data Science</option><option>Marketing</option><option>Cloud</option><option>Content</option></select></div>
+  <button id="searchBtn" class="primary-btn">Search</button>
+</section>
+<section class="filters">
+  <label>Work mode <select id="workMode"><option value="">Any</option><option>Remote</option><option>Hybrid</option><option>Onsite</option></select></label>
+  <label>Duration <select id="duration"><option value="">Any</option><option>1 month</option><option>2 months</option><option>3 months</option><option>6 months</option></select></label>
+  <label>Maximum monthly stipend <select id="stipend"><option value="">Any</option><option value="5000">₹5,000</option><option value="8000">₹8,000</option><option value="10000">₹10,000</option><option value="15000">₹15,000</option></select></label>
+  <button id="clearBtn" class="text-btn">Clear filters</button>
+</section>
+<section class="results-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Latest internships</h2></div><p id="resultCount" class="muted"></p></section>
+<div id="internshipList" class="cards"><p class="muted">Loading internships...</p></div>
+<section id="about" class="about"><h2>Your next chapter starts here.</h2><p>Explore sample internship opportunities and apply through a simple online application process.</p></section>
+</main>
+<footer>© 2026 InternConnect · Internship Listing Portal</footer>
+<script src="/static/script.js"></script>
+</body></html>

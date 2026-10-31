@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Apply for Internship</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header class="topbar"><a class="brand" href="/">Intern<span>Connect</span></a><nav><a href="/">All internships</a></nav></header>
+<main class="narrow"><a class="back-link" href="/">← Back to internships</a><section class="form-card"><p class="eyebrow">TAKE THE NEXT STEP</p><h1>Apply for this internship</h1><p id="jobTitle" class="muted">Loading internship...</p>
+<form id="applicationForm">
+<input type="hidden" id="internshipId" value="{{ internship_id }}">
+<label for="name">Full name *</label><input id="name" name="name" required maxlength="100" placeholder="Enter your full name">
+<label for="email">Email address *</label><input id="email" name="email" type="email" required placeholder="you@example.com">
+<label for="phone">Phone number *</label><input id="phone" name="phone" required placeholder="10-digit phone number">
+<label for="resume">Resume link (optional)</label><input id="resume" name="resume_link" type="url" placeholder="https://drive.google.com/..."><label for="resumeFile">Or upload resume (PDF, DOC, DOCX · max 5 MB)</label><input id="resumeFile" name="resume_file" type="file" accept=".pdf,.doc,.docx">
+<label for="cover">Cover note (optional)</label><textarea id="cover" name="cover_note" rows="5" maxlength="1000" placeholder="Tell the company why you are interested..."></textarea>
+<button class="primary-btn full" type="submit">Submit application</button><p id="formMessage" role="status"></p>
+</form></section></main><footer>© 2026 InternConnect</footer><script>const INTERNSHIP_ID={{ internship_id }};</script><script src="/static/apply.js"></script></body></html>

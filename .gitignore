@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+database/*.db
+.pytest_cache/
+uploads/*\n!uploads/.gitkeep\n
